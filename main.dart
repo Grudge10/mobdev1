@@ -10,9 +10,20 @@ void main(List<String> arguments) {
   print("Enter your height(cm)");
   double height = double.parse(stdin.readLineSync()!);
 
+  print("Enter your weight(kg):");
+  num weight = num.parse(stdin.readLineSync()!);
+
   print("Enter your favorite color:");
   dynamic color = stdin.readLineSync();
 
   print("Do you have a dog?(true or false)");
   bool haveADog = bool.parse(stdin.readLineSync()!);
+
+  print("\n----- About You -----");
+  print("Name: $name");
+  print("Age: $age");
+  print("Height: $height cm");
+  print("Weight: $weight kg");
+  print("Favorite color: $color");
+  print("Has a dog: $haveADog");
 }
