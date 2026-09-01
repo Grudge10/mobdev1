@@ -1,53 +1,40 @@
 void main(List<String> arguments) {
-  // String Concatenation
-  String firstName = "John";
-  String lastName = "Doe";
-  String fullName = firstName + " " + lastName;
-  print('Full Name: $fullName');
+  // task #1
+  for (int i = 5; i >= 0; i--) {
+    if (i == 0) {
+      print("GO!");
+    } else {
+      print("Game starting in: $i");
+    }
+  }
 
-  // String Interpolation
-  print('Full Name: $firstName $lastName');
+  print("");
 
-  // String Length
-  String language = "Dart";
-  int languageLength = language.length;
-  print('String Length: $languageLength');
+  // task #2
+  int totalCoins = 0;
+  while (totalCoins < 50) {
+    totalCoins = totalCoins + 10;
+    print("Total Coins: $totalCoins");
+  }
 
-  // Capitalization
-  String text = "hello, world!";
-  String textUppercase = text.toUpperCase();
-  print('Capitalization: $textUppercase');
+  print("");
 
-  // Uncapitalization
-  String textLowercase = textUppercase.toLowerCase();
-  print('Uncapitalization: $textLowercase');
+  // task #3
+  do {
+    print("The winner of the prize draw is YOU!");
+  } while (false);
 
-  // Trim
-  String spacedText = "     Hello <-space-> World      ";
-  String trimmedText = spacedText.trim();
-  print('Trim: $trimmedText');
+  print("");
 
-  // Search
-  String brainrot = "skibidi";
-  bool searchedAnywhere = brainrot.contains('ibi');
-  bool searchedBeginning = brainrot.startsWith('ski');
-  bool searchedEnd = brainrot.endsWith('idi');
-  print('Searched Anywhere: $searchedAnywhere');
-  print('Searched Beginning: $searchedBeginning');
-  print('Searched End: $searchedEnd');
+  // task #4
+  List<String> prizes = ['Plush Toy', 'Keychain', 'Headphones', 'Gift Card'];
+  for (String prize in prizes) {
+    print("Available Prize: $prize");
+  }
 
-  // (Search) and Replace
-  String randomText = "I use Java";
-  String replacedText = randomText.replaceAll("Java", "Dart");
-  print('Search and Replace: $replacedText');
+  print("");
 
-  // String extraction
-  String text2 = "Hello World";
-  String extractedText = text2.substring(0, 5);
-  print('String Extraction: $extractedText');
-
-  // String split
-  String fruits = "Apple,Banana,Orange";
-  List<String> result = fruits.split(",");
-  print('String Split: $result');
+  // task #5
+  List<int> scores = [1200, 4500, 3100, 8900];
+  scores.forEach((score) => print("High Score: $score points"));
 }
